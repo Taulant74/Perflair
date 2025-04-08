@@ -1,0 +1,796 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+        <!-- title of site -->
+        <title>Perflair</title>
+
+        <!-- Remove favicon -->
+        <!-- <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/> -->
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+        <!--linear icon css-->
+		<link rel="stylesheet" href="assets/css/linearicons.css">
+
+        <!--flaticon.css-->
+		<link rel="stylesheet" href="assets/css/flaticon.css">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+	
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+	
+		<!--welcome-hero start -->
+		<section id="home" class="welcome-hero">
+
+			<!-- top-area Start -->
+			<div class="top-area">
+				<div class="header-area">
+					<!-- Start Navigation -->
+				    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+				        <div class="container">
+
+				            <!-- Start Header Navigation -->
+				            <div class="navbar-header">
+				                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+				                    <i class="fa fa-bars"></i>
+				                </button>
+				                <a class="navbar-brand" href="index.html">Perflair<span></span></a>
+
+				            </div><!--/.navbar-header-->
+				            <!-- End Header Navigation -->
+
+				            <!-- Collect the nav links, forms, and other content for toggling -->
+				            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+				                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+				                    <li class=" scroll active"><a href="#home">Ballina</a></li>
+				                    <li class="scroll"><a href="#service">Dyqani</a></li>
+				                    <li class="scroll"><a href="#new-cars">Parfumet me te reja</a></li>
+				                    <li class="scroll"><a href="#featured-cars">Parfumet ne stok</a></li>
+				                </ul><!--/.nav -->
+				            </div><!-- /.navbar-collapse -->
+				        </div><!--/.container-->
+				    </nav><!--/nav-->
+				    <!-- End Navigation -->
+				</div><!--/.header-area-->
+			    <div class="clearfix"></div>
+
+			</div><!-- /.top-area-->
+			<!-- top-area End -->
+
+			<div class="container">
+				<div class="welcome-hero-txt">
+					<h2>Perflair</h2>
+					<p>
+						Stili yt, aroma jote – përsosmëri në çdo nuhatje
+						</p>
+					<button class="welcome-btn" data-toggle="modal" data-target="#contactModal">Na kontaktoni</button>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="model-search-content">
+							<div class="single-model-search">
+								<h2>Selekto Qmimin</h2>
+								<div class="model-select-icon">
+									<select class="form-control" id="priceFilter">
+										<option value="all">Të gjitha qmimet</option>
+										<option value="65">65€</option>
+										<option value="70">70€</option>
+										<option value="75">75€</option>
+										<option value="80">80€</option>
+										<option value="90">90€</option>
+										<option value="100">100€</option>
+									</select>
+								</div>
+							</div>
+						
+							<div class="single-model-search">
+								<button class="welcome-btn model-search-btn" onclick="filterCars()">Kerko</button>
+							</div>
+						</div>
+						
+			</div>
+
+		</section><!--/.welcome-hero-->
+		<!--welcome-hero end -->
+
+		 <!-- Modal for Contact -->
+<div id="contactModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Na kontaktoni</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+				<div class="contact-info">
+                    <p><i class="fa fa-phone"></i> <strong>Telefoni :</strong> +383 46 117 631</p>
+				<a href="https://www.instagram.com/perfflair/" target="_blank">  <p><i class="fa fa-instagram"></i> <strong>Instagrami</strong></a></p></a>
+
+                </div>
+				<a href="https://www.instagram.com/perfflair/" target="_blank"></a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Modal for Filtered Cars -->
+    <div id="filteredCarsModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Filtered Perfumes</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="filteredCarsModalBody">
+                    <!-- Filtered car details will be populated here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+		<!--service start -->
+		<section id="service" class="service">
+			<div class="container">
+				<div class="service-content">
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service-item">
+								<div class="single-service-icon">
+									<i class="fa fa-spray-can fa-3x"></i>
+								</div>
+								<h2><a>Koleksion i madh parfumash</a></h2>
+								<p>
+									Zbuloni një gamë të mrekullueshme parfumesh, nga klasikët e përjetshëm tek aromat moderne, të krijuara për çdo personalitet dhe rast.	
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service-item">
+								<div class="single-service-icon">
+									<i class="fa fa-gem fa-3x"></i> <!-- Security & authenticity -->
+								</div>
+								<h2><a>Zgjedhje Premium për Klientët Tanë</a></h2>
+								<p>
+									Çdo parfum në koleksionin tonë është përzgjedhur me kujdes për t’ju ofruar aromat më të mira, origjinale dhe të garantuara nga burime të besueshme.	
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service-item">
+								<div class="single-service-icon"><!-- Perfume spray icon -->
+									<i class="fa fa-truck fa-3x"></i> <!-- Represents fast shipping -->
+								</div>
+								<h2><a>Transport i Shpejtë me Paketim të Sigurtë</a></h2>
+								<p>
+									Bleni me siguri nga shtëpia juaj dhe përfitoni dërgesë të shpejtë dhe paketim të mbrojtur për të ruajtur aromën tuaj të preferuar
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--/.container-->
+
+		</section><!--/.service-->
+		<!--service end-->
+
+		<!--new-cars start -->
+		<section id="new-cars" class="new-cars">
+			<div class="container">
+				<div class="section-header">
+					<p>Shikoni parfumet tona me te fundit</p>
+					<h2>parfumet me te reja</h2>
+				</div><!--/.section-header-->
+				<div class="new-cars-content">
+					<div class="owl-carousel owl-theme" id="new-cars-carousel">
+						<div class="new-cars-item">
+							<div class="single-new-cars-item">
+								<div class="row">
+									<div class="col-md-7 col-sm-12">
+										<div class="new-cars-img">
+											<img src="assets/images/new-cars-model/ncm1.png" alt="img"/>
+										</div><!--/.new-cars-img-->
+									</div>
+									<div class="col-md-5 col-sm-12">
+										<div class="new-cars-txt">
+											<h2><a href="#">Dior Homme Intense <span> za100</span></a></h2>
+											<p>
+												Dior Homme është një aromë ikonike e krijuar për burrin modern që vlerëson elegancën dhe sofistikimin. Me një kombinim të rafinuar të notave drunore dhe aromave të freskëta, ky parfum përfaqëson një stil të veçantë dhe një ndjenjë të patjetërsueshme vetëbesimi.
+											</p>
+											
+											<p class="new-cars-para2">
+												Notat e hapjes sjellin një përzierje të butë të bergamotit dhe lavandës, ndërsa zemra e parfumit karakterizohet nga irisi elegant dhe kakaoja e ngrohtë.
+											</p>
+											
+											
+										</div><!--/.new-cars-txt-->	
+									</div><!--/.col-->
+								</div><!--/.row-->
+							</div><!--/.single-new-cars-item-->
+						</div><!--/.new-cars-item-->
+						<div class="new-cars-item">
+							<div class="single-new-cars-item">
+								<div class="row">
+									<div class="col-md-7 col-sm-12">
+										<div class="new-cars-img">
+											<img src="assets/images/new-cars-model/ncm2.png" alt="img"/>
+										</div><!--/.new-cars-img-->
+									</div>
+									<div class="col-md-5 col-sm-12">
+										<div class="new-cars-txt">
+											<h2>Xerjoff Erba Pura</h2>
+											<p>
+												Xerjoff Erba Pura është një parfum i jashtëzakonshëm, i mbushur me freski dhe luks absolut. Një përzierje magjike e frutave mesdhetare dhe notave orientale, ky parfum sjell një ndjenjë gjallërie dhe sensualiteti të përjetshëm.
+											</p>
+											
+											<p class="new-cars-para2">
+												Aroma hapet me nota të ëmbla dhe të freskëta të portokallit, limonit dhe bergamotit, duke krijuar një hyrje të ndritshme dhe tërheqëse.
+											</p>
+											
+										
+										</div><!--/.new-cars-txt-->	
+									</div><!--/.col-->
+								</div><!--/.row-->	
+							</div><!--/.single-new-cars-item-->
+						</div><!--/.new-cars-item-->
+						<div class="new-cars-item">
+							<div class="single-new-cars-item">
+								<div class="row">
+									<div class="col-md-7 col-sm-12">
+										<div class="new-cars-img">
+											<img src="assets/images/new-cars-model/ncm3.png" alt="img"/>
+										</div><!--/.new-cars-img-->
+									</div>
+									<h2>YSL Libre</h2>
+									<br>
+
+<p>
+    YSL Libre është një parfum magjepsës që kombinon freskinë e agrumeve me ngrohtësinë e notave drunore dhe vaniljes. 
+    Një përzierje e përkryer mes elegancës klasike dhe modernitetit, ky parfum sjell një aromë të ndjeshme dhe të paharrueshme.
+</p>
+
+<p class="new-cars-para2">
+    Me nota të freskëta të livandës dhe portokallit të hidhur, të balancuara nga aroma e pasur e jaseminit dhe vaniljes së ëmbël, 
+    YSL Libre është simbol i luksit dhe sofistikimit. Ideale për çdo rast, ai lë një prani delikate, por tërheqëse.
+</p>
+
+
+								</div><!--/.row-->
+							</div><!--/.single-new-cars-item-->
+						</div><!--/.new-cars-item-->
+					</div><!--/#new-cars-carousel-->
+				</div><!--/.new-cars-content-->
+			</div><!--/.container-->
+
+		</section><!--/.new-cars-->
+		<!--new-cars end -->
+
+		<!--featured-cars start -->
+		<section id="featured-cars" class="featured-cars">
+			<div class="container">
+				<div class="section-header">
+					<h2>Parfumet ne stok</h2>
+				</div><!--/.section-header-->
+				<div class="featured-cars-content">
+					<div class="row" id="featuredCars">
+						<div class="col-lg-3 col-md-4 col-sm-6" data-model="Prada" data-price="75">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/c3.jpg" alt="cars">
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2>Prada</h2>
+									<h3>75€</h3>
+									<p>
+										Një aromë elegante dhe e sofistikuar me nota të freskëta lulesh dhe bazë të thellë drunore. 
+										E përsosur për ata që duan të ndihen të veçantë në çdo moment.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6" data-model="Libre" data-price="75">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/c16.jpg" alt="cars">
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2>Jean Paul Gaultier UltraMale</h2>
+									<h3>100€</h3>
+									<p>
+										Një aromë e fuqishme dhe provokuese që sfidon rregullat me kombinimin e notave të dardhës së ëmbël, lavandës dhe vaniljes sensuale.	
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6" data-model="Bleu Chanel" data-price="65">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/c2.jpg" alt="cars">
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2>Bleu Chanel</h2>
+									<h3>65€</h3>
+									<p>
+										Një aromë e fuqishme, e freskët dhe misterioze për burrat që guxojnë të thyejnë kufijtë. 
+										Perfekte për çdo rast, duke lënë një përshtypje të paharrueshme.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6" data-model="Maison" data-price="65">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/c4.jpg" alt="cars">
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2>Maison</h2>
+									<h3>65€</h3>
+									<p>
+										Një përzierje e mahnitshme mes notave të agrumeve dhe drurëve të çmuar, Maison është një parfum modern dhe i rafinuar për meshkuj që duan të bien në sy.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6" data-model="Scandal" data-price="90">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/c5.jpg" alt="cars">
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2>Scandal</h2>
+									<h3>90€</h3>
+									<p>
+										Sharm dhe pasion në një shishe! Scandal është një aromë magjepsëse me nota mjalti dhe jasemini, e bërë për ata që nuk kanë frikë të jenë në qendër të vëmendjes.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6" data-model="Creed" data-price="80">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/c6.jpg" alt="cars">
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2>Creed</h2>
+									<h3>80€</h3>
+									<p>
+										Një aromë ikonike dhe e përjetshme! Creed përmban nota freskie dhe drunore, duke reflektuar luksin dhe klasën absolute të një mashkulli të sofistikuar.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6" data-model="Al Thair" data-price="100">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/c7.jpg" alt="cars">
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2>Al Thair</h2>
+									<h3>100€</h3>
+									<p>
+										Një aromë mbretërore me kombinime orientale të drurit të agarit dhe erëzave të ngrohta. Al Thair është një parfum që tregon fuqi dhe madhështi.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6" data-model="Versache" data-price="70">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/c8.jpg" alt="cars">
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2>Versache/h2>
+									<h3>70€</h3>
+									<p>
+										Një përzierje perfekte e freskisë mesdhetare me notat e drurëve të ngrohtë. Versace është sinonim i stilit dhe luksit për ata që duan të duken dhe të ndihen të veçantë.
+									</p>
+								</div>
+							</div>
+						</div>
+				<div class="col-lg-3 col-md-4 col-sm-6" data-model="Gucci" data-price="85">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/c9.jpg" alt="cars">
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2>Lancome Paris</h2>
+									<h3>85€</h3>
+									<p>
+										Një aromë e sofistikuar dhe e pasur me nota të freskëta dhe drunore. Gucci është sinonim i luksit dhe elegancës.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6" data-model="Dior" data-price="95">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/c10.jpg" alt="cars">
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2>Stronger With You</h2>
+									<h3>95€</h3>
+									<p>
+										Një aromë e fuqishme dhe e rafinuar me nota të freskëta dhe të ngrohta. Dior është sinonim i luksit dhe klasës.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6" data-model="Tom Ford" data-price="110">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/c11.jpg" alt="cars">
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2>MYSLF</h2>
+									<h3>110€</h3>
+									<p>
+										Një aromë e fuqishme dhe e sofistikuar me nota të freskëta dhe drunore. Tom Ford është sinonim i luksit dhe elegancës.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6" data-model="Chanel" data-price="120">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/c13.jpg" alt="cars">
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2>Olympea</h2>
+									<h3>120€</h3>
+									<p>
+										Një aromë e sofistikuar dhe e pasur me nota të freskëta dhe drunore. Chanel është sinonim i luksit dhe elegancës.
+									</p>
+								</div>
+							</div>
+						</div>
+					
+		
+</div>
+				</div>
+			</div><!--/.container-->
+
+		</section><!--/.featured-cars-->
+		<!--featured-cars end -->
+
+		<!-- Modal -->
+		<div id="carModal" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="carModalTitle"></h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body" id="carModalBody">
+						<!-- Car details will be populated here -->
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- clients-say strat -->
+		<section id="clients-say" class="clients-say">
+			<div class="container">
+			
+				<div class="section-header">
+					<h2>Parfumet me te shitura</h2>
+					<br><br><br><br>
+				</div><!--/.section-header-->
+				<div class="col-lg-3 col-md-4 col-sm-6" data-model="Gucci" data-price="85">
+					<div class="single-featured-cars">
+						<div class="featured-img-box">
+							<div class="featured-cars-img">
+								<img src="assets/images/featured-cars/c19.jpg" alt="cars">
+							</div>
+						</div>
+						<div class="featured-cars-txt">
+							<h2>Burberry for men</h2>
+							<h3>75€</h3>
+							<p>
+								Një aromë klasike dhe elegante që kombinon freskinë e agrumeve me drurë të ngrohtë dhe erëza pikante. Ideale për burrat që vlerësojnë stilin dhe sofistikimin.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6" data-model="Dior" data-price="95">
+					<div class="single-featured-cars">
+						<div class="featured-img-box">
+							<div class="featured-cars-img">
+								<img src="assets/images/featured-cars/c14.jpg" alt="cars">
+							</div>
+						</div>
+						<div class="featured-cars-txt">
+							<h2>Jean Paul Gaultier Le Beau Paradise Garden</h2>
+							<h3>145€</h3>
+							<p>
+								Një parfum ekzotik dhe joshës që të çon në një kopsht tropikal. Kokosi, bergamoti dhe vanilja krijojnë një aromë të veçantë që reflekton luksin dhe aventurën.	
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6" data-model="Tom Ford" data-price="110">
+					<div class="single-featured-cars">
+						<div class="featured-img-box">
+							<div class="featured-cars-img">
+								<img src="assets/images/featured-cars/c20.jpg" alt="cars">
+							</div>
+						</div>
+						<div class="featured-cars-txt">
+							<h2>Dior Sauvage</h2>
+							<h3>110€</h3>
+							<p>
+								Një aromë e fuqishme dhe misterioze që përmban freskinë e bergamotit dhe thellësinë e ambergris. Perfekte për burrat që duan të lënë një përshtypje të fortë dhe të rafinuar.	
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6" data-model="Chanel" data-price="120">
+					<div class="single-featured-cars">
+						<div class="featured-img-box">
+							<div class="featured-cars-img">
+								<img src="assets/images/featured-cars/c22.jpg" alt="cars">
+							</div>
+						</div>
+						<div class="featured-cars-txt">
+							<h2>Jean Paul Gaultier Le Male Elixir</h2>
+							<h3>120€</h3>
+							<p>
+								Aromë sensuale dhe intensive me livandë, vanilje dhe dru qelibar. Një zgjedhje ideale për ata që duan të tregojnë forcë dhe elegancë mashkullore.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div><!--/.container-->
+		</section><!--/.clients-say-->
+		<!-- clients-say end -->
+
+		<!--brand strat -->
+		<section id="brand"  class="brand">
+			<div class="container">
+				<div class="brand-area">
+					<div class="owl-carousel owl-theme brand-item">
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/brand/br1.png" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/brand/br2.png" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/brand/br3.png" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/brand/br4.png" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/brand/br5.png" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/brand/br6.png" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+					</div><!--/.owl-carousel-->
+				</div><!--/.clients-area-->
+
+			</div><!--/.container-->
+
+		</section><!--/brand-->	
+		<!--brand end -->
+
+		<!--blog start -->
+		<section id="blog" class="blog"></section><!--/.blog-->
+		<!--blog end -->
+
+		<!--contact start-->
+		<footer id="contact" class="contact">
+			<div class="container">
+				<div class="footer-top">
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="single-footer-widget">
+								<div class="footer-logo">
+									<a href="index.html">Perflair</a>
+								</div>
+								<div class="footer-contact">
+									<p>Email : perflair@gmail.com</p>
+									<p>Phone : +383 46 117 631</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-footer-widget">
+								<div class="footer-social">
+									<a href="https://www.instagram.com/perfflair/"><i class="fa fa-instagram"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-footer-widget">
+								<p>&copy; copyright. Designed and developed by <a href="https://www.themesine.com/">themesine</a>.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up" id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div>
+			</div><!--/.scroll-Top-->
+		</footer><!--/.contact-->
+		<!--contact end-->
+
+
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="assets/js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="assets/js/bootsnav.js"></script>
+
+		<!--owl.carousel.js-->
+        <script src="assets/js/owl.carousel.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+        <!--Custom JS-->
+        <script src="assets/js/custom.js"></script>
+
+		<script>
+		function filterCars() {
+			const priceFilter = document.getElementById('priceFilter').value;
+			const cars = document.querySelectorAll('#featuredCars .col-lg-3');
+			const filteredCars = [];
+
+			cars.forEach(car => {
+				const carPrice = car.getAttribute('data-price');
+
+				if (priceFilter === 'all' || carPrice === priceFilter) {
+					filteredCars.push(car);
+				}
+			});
+
+			if (filteredCars.length > 0) {
+				showFilteredCarsModal(filteredCars);
+			}
+		}
+
+		function showFilteredCarsModal(cars) {
+			const modalBody = document.getElementById('filteredCarsModalBody');
+			modalBody.innerHTML = '';
+
+			cars.forEach(car => {
+				const carModel = car.getAttribute('data-model');
+				const carPrice = car.getAttribute('data-price');
+				const carImage = car.querySelector('.featured-cars-img img').src;
+				const carDescription = car.querySelector('.featured-cars-txt p').innerText;
+
+				const carHtml = `
+					<div class="filtered-car">
+						<div class="row">
+							<div class="col-md-4">
+								<img src="${carImage}" alt="${carModel}" class="img-fluid">
+							</div>
+							<div class="col-md-8">
+								<h5>${carModel}</h5>
+								<p><strong>Price:</strong> ${carPrice}€</p>
+								<p>${carDescription}</p>
+							</div>
+						</div>
+						<hr>
+					</div>
+				`;
+
+				modalBody.innerHTML += carHtml;
+			});
+
+			$('#filteredCarsModal').modal('show');
+		}
+		</script>
+	</body>	
+</html>
